@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Contact } from './contact';
+import { contacts } from './sample-contacts';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'contact-manager';
+
+  contacts: Contact[] = contacts;
+  
 }
