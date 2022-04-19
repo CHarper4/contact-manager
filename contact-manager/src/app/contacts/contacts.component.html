@@ -1,0 +1,22 @@
+<div *ngFor="let contact of contacts">
+<div class="contacts">
+    <div class="card">
+        <div class="card-name">
+            {{contact.fName}} {{contact.lName}}
+        </div>
+        <div class="card-phone">
+            {{contact.phone}}
+        </div>
+        <div class="card-email">
+            {{contact.email}}
+        </div>
+        <!--<button type="button"></button>-->
+    </div>
+    <!--
+        <button type="button" (click)="select(contact)">
+        <span class="name">{{contact.fName}} {{contact.lName}}</span>
+    </button>
+    -->
+</div>
+<br><br>
+</div>
