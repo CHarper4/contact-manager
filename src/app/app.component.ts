@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 import { Contact } from './contact';
-import { contacts } from './sample-contacts';
+
 
 @Component({
   selector: 'app-root',
@@ -8,8 +8,7 @@ import { contacts } from './sample-contacts';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'contact-manager';
 
-  contacts: Contact[] = contacts;
-  
+
+
 }

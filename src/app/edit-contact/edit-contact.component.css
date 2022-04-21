@@ -1,0 +1,43 @@
+.input-box {
+    box-sizing: border-box;
+    border: solid;
+    border-width: 4px;
+    border-color: white;
+    font-size: 1.3rem;
+    padding: 7px 0;
+    background: transparent;
+    color: white;
+    outline: none;
+    text-align: center;
+    
+}
+
+::placeholder {
+    color: white;
+    text-align: center;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+#fnBox {
+    position: fixed;
+    left: 42.5%;
+    top: 30%;
+}
+#lnBox {
+    position: fixed;
+    left: 42.5%;
+    top: 40%;
+}
+#pnBox {
+    position: fixed;
+    left: 42.5%;
+    top: 50%;
+}
+#emBox {
+    position: fixed;
+    left: 42.5%;
+    top: 60%;
+}

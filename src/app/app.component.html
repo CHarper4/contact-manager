@@ -1,1 +1,9 @@
-<app-contact *ngFor = "let con of contacts" [contact] = con></app-contact>
+<h1>Contact Manager</h1>
+
+<nav>
+    <button class="nav-button" routerLink="/contacts">Contact List</button>
+    &nbsp;
+    <button class="nav-button" routerLink="/add-contact">Add Contact</button>
+</nav>
+
+<router-outlet></router-outlet>
