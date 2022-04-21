@@ -11,7 +11,6 @@ export class EditContactComponent implements OnInit {
 
   contact: Contact= { fName: '', lName: '', phone: 0, email: ''};
 
-  
   constructor(private contactService: ContactService) { }
 
   ngOnInit(): void {

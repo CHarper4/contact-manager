@@ -1,0 +1,9 @@
+<form>
+    <input id="searchBox" class="input-box" type="text" placeholder="Name" #searchString>
+    <button class="search-button" (click) = "search(searchString.value)">Search</button>
+</form>
+<br><br><br><br><br>
+<div *ngFor="let contact of matchedContacts" class="matched-contacts">
+    <app-contact [contact] = "contact"></app-contact>
+</div>
+

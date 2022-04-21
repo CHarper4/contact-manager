@@ -7,13 +7,17 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { AddContactComponent } from './add-contact/add-contact.component';
 import { AppRoutingModule } from './app-routing.module';
 import { EditContactComponent } from './edit-contact/edit-contact.component';
+import { SearchContactComponent } from './search-contact/search-contact.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContactsComponent,
     AddContactComponent,
-    EditContactComponent
+    EditContactComponent,
+    SearchContactComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

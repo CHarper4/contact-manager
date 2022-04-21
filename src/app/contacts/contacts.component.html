@@ -1,14 +1,3 @@
 <div *ngFor="let contact of contacts">
-<div class="contacts">
-    <div class="card">
-
-        <div class="card-name">{{contact.fName}} {{contact.lName}}</div>
-        <div class="card-phone"><span class="info-label">Phone Number: </span>{{contact.phone}}</div>
-        <div class="card-email"><span class="info-label">Email: </span>{{contact.email}}</div>
-
-        <button class="deleteButton" type="button" (click)="remove(contact)"></button>
-        <button class="edit-button" type="button" (click)="onSelect(contact)" routerLink="/edit-contact">Edit</button>
-    </div>
-    
-</div>
+    <app-contact [contact] = "contact"></app-contact>
 </div>

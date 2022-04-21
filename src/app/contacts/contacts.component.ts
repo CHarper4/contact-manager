@@ -12,7 +12,6 @@ export class ContactsComponent implements OnInit {
 
   contacts: Contact[] = [];
 
-
   constructor(private contactService: ContactService) { }
 
   ngOnInit(): void {
@@ -21,18 +20,6 @@ export class ContactsComponent implements OnInit {
 
   getContacts(): void {
     this.contacts = this.contactService.getContacts();
-  }
-  
-  add(con: Contact): void {
-    this.contactService.addContact(con);
-  }
-
-  remove(con: Contact): void {
-    this.contactService.removeContact(con);
-  }
-  
-  onSelect(con: Contact): void {
-    this.contactService.passContact(con);
   }
   
 }
